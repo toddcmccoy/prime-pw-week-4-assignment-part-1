@@ -57,7 +57,9 @@ function isPositive( number ) {
 console.log( 'isPositive - should say true', isPositive(317) );
 console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-38) );
-
+console.log( 'isPositive - should say true', isPositive(3) );
+console.log( 'isPositive - should say true', isPositive(2) );
+console.log( 'isPositive - should say false', isPositive(-8) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
