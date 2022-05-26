@@ -63,9 +63,13 @@ console.log( 'isPositive - should say false', isPositive(-8) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
 
+
+function getLast( array ) {   
+  array = [ 'pale ale', 'maibock', 'vienna lager', 'hefeweizen', ];
+  return (array.pop ());
 }
+console.log (getLast());
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
