@@ -15,9 +15,9 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return name;
+  return 'hello,' + name;
 }
-console.log(helloName('Hello, Stacy!'));
+console.log(helloName('Stacy'));
 // Remember to call the function to test
 
 
@@ -84,6 +84,10 @@ function find( value, array ){
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
+  if (letter === string.charAt(0))
+    return true
+  else
+    return false
 
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
