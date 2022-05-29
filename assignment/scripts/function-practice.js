@@ -15,9 +15,9 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return 'Hello, ' + name;
+  return 'Hello, ' + name + '!';
 }
-console.log(helloName('Stacy'));
+console.log(helloName('John'));
 // Remember to call the function to test
 
 
@@ -74,9 +74,25 @@ console.log (getLast());
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+treasureArray=[13, 42, 97, 17, 134];
+console.log('Checking array. Should be: [13, 42, 97, 17, 134]');
+
+function find( value, treasureArray ){
+  for (let i=0; i<=treasureArray.length; i++){
+    if (treasureArray[i]===value){
+      return true
+    } else{
+      return false
+    }
+  }
 }
+console.log(find(13,treasureArray));
+console.log(find(23,treasureArray));
+console.log(find(42,treasureArray));
+console.log(find(16,treasureArray));
+console.log(find(0,treasureArray));
+console.log(find(-6,treasureArray));
+console.log(find(134,treasureArray));
 
 // ----------------------
 // Stretch Goals
