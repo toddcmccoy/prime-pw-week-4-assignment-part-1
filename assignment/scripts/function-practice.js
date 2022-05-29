@@ -65,9 +65,9 @@ console.log( 'isPositive - should say false', isPositive(-8) );
 //    array is empty, return `undefined`.
 
 
-function getLast( array ) {   
-  array = [ 'pale ale', 'maibock', 'vienna lager', 'hefeweizen', ];
-  return (array.pop ());
+function getLast( beerList ) {   
+  beerList = [ 'pale ale', 'maibock', 'vienna lager', 'hefeweizen', ];
+  return (beerList.pop ());
 }
 console.log (getLast());
 
@@ -75,16 +75,15 @@ console.log (getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 treasureArray=[13, 42, 97, 17, 134];
-console.log('Checking array. Should be: [13, 42, 97, 17, 134]');
+console.log('Testing array. Should be: [13, 42, 97, 17, 134]');
 
 function find( value, treasureArray ){
-  for (let i=0; i<=treasureArray.length; i++){
+  for (let i=0; i <= treasureArray.length; i++){
     if (treasureArray[i]===value){
       return true
-    } else{
-      return false
-    }
+    } 
   }
+  return false
 }
 console.log(find(13,treasureArray));
 console.log(find(23,treasureArray));
@@ -110,11 +109,6 @@ console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
-}
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
