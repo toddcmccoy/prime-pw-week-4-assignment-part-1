@@ -63,18 +63,19 @@ console.log( 'isPositive - should say false', isPositive(-8) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+beerList = [ 'pale ale', 'maibock', 'vienna lager', 'hefeweizen', ];
 
-
-function getLast( beerList ) {   
-  beerList = [ 'pale ale', 'maibock', 'vienna lager', 'hefeweizen', ];
-  return (beerList.pop ());
+function getLast(array) {
+  drink = array.pop();
+  return drink,
+  console.log(drink);
 }
-console.log (getLast());
+getLast(beerList);
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-treasureArray=[13, 42, 97, 17, 134];
+const treasureArray=[13, 42, 97, 17, 134];
 console.log('Testing array. Should be: [13, 42, 97, 17, 134]');
 
 function find( value, treasureArray ){
